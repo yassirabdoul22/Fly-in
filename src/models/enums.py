@@ -1,0 +1,1 @@
+# Enumérations (ZoneType, etc.)
