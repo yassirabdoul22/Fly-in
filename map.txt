@@ -1,0 +1,26 @@
+# Nombre de drones
+nb_drones: 5
+
+# Zones principales
+start_hub: base 0 0 [color=green]
+end_hub: goal 10 0 [color=yellow]
+
+# Zones intermédiaires
+hub: A 2 0
+hub: B 4 0 [zone=priority color=blue]
+hub: C 6 0 [zone=restricted color=red]
+hub: D 8 0
+
+# Zone bloquée (inaccessible)
+hub: obstacle 5 2 [zone=blocked color=gray]
+
+# Connexions principales
+connection: base-A
+connection: A-B
+connection: B-C
+connection: C-D
+connection: D-goal
+
+# Chemin alternatif plus court mais capacité limitée
+connection: base-B [max_link_capacity=2]
+connection: B-D [max_link_capacity=1]

@@ -1,2 +1,0 @@
-# Couche Données 
-# Classe Connection
