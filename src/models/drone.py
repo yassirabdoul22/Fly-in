@@ -20,7 +20,8 @@ class Drone:
     path: List['Zone'] = field(default_factory=list) 
     transit_target: Optional['Zone'] = None
     transit_remaining: int = 0
-
+    path_index:int = 0
+    
     @property 
     def current_zone(self) -> Optional['Zone']:
         if self.path_index < len(self.path): 

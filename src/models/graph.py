@@ -1,5 +1,5 @@
 from typing import Dict, List, Optional
-from .zone import Zone
+from .zone import Zone,ZoneType
 from .drone import Drone
 
 class Graph:

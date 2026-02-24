@@ -1,6 +1,5 @@
 # Nombre de drones
 nb_drones: 5
-
 # Zones principales
 start_hub: base 0 0 [color=green]
 end_hub: goal 10 0 [color=yellow]
